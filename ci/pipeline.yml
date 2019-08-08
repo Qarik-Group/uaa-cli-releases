@@ -106,8 +106,10 @@ resources:
   - name: uaa-cli
     type: github-release
     source:
-      user:         cloudfoundry-incubator
+      owner:        cloudfoundry-incubator
       repository:   uaa-cli
+      release:      true
+      pre_release:  true
       access_token: (( grab meta.github.access_token ))
 
   # - name: notify
